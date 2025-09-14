@@ -1,0 +1,11 @@
+version: 1.0.0
+timestamp: 2025-09-14T15:46:00-04:00
+updated_files:
+  - standards.md
+changes:
+  standards.md:
+    - Merged all previous standards into one unified document
+    - Added AI Response Standards section tailored to neurodivergent workflows
+    - Defined update & maintenance protocols including baseline snapshots and checkpoints
+    - Structured all sections with numbered headings, tables, and bullets
+    - Ensured `index.md` linking and backup strategy
