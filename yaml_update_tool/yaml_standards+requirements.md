@@ -7,6 +7,7 @@
 
 Defines the structure, formatting, and usage of `update.yaml` files used to apply changes to `.md` documentation files. Ensures updates are consistent, traceable, and aligned with project standards.
 
+
 ---
 
 ## 2. YAML File Format
@@ -21,6 +22,7 @@ changes:
     - Added AI Response Standards
     - Merged previous content
     - Structured with tables and bullets
+    - Added new section on modular YAML tooling
 ```
 
 ---
@@ -36,15 +38,19 @@ changes:
 
 ## 4. Processing Rules
 
+- YAMLs placed in /yaml-inbox
 - Only one YAML file processed at a time
 - Applied YAMLs moved to `/docs/yaml-history/`
 - Log entry created in `/logs/update.log`
 - `index.md` regenerated after each update
-- Previous `.md` versions backed up to `/backups/docs/YYYY-MM-DD/`
+- Previous `.md` versions backed up to `/backups/YYYY-MM-DD/`
+
+### 4. Config File
+- default_docs_path: ../docs
 
 ---
 
-## 5. Markdown Update Logic
+# 5. Markdown Update Logic
 
 | Step | Action |
 |------|--------|
