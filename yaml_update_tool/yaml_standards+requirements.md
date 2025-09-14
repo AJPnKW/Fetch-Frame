@@ -45,9 +45,6 @@ changes:
 - `index.md` regenerated after each update
 - Previous `.md` versions backed up to `/backups/YYYY-MM-DD/`
 
-### 4. Config File
-- default_docs_path: ../docs
-
 ---
 
 # 5. Markdown Update Logic
@@ -173,3 +170,69 @@ Do not include explanations or summaries. Just generate the YAML file content.
 ```
 
 ---
+
+## 9. Config File Standards
+
+Stores persistent settings for the YAML update tool.
+
+### 9.1 Location
+- `/yaml_update_tool/config/settings.yaml`
+
+### 9.2 Schema
+
+```yaml
+default_docs_path: ../docs
+backup_enabled: true
+index_autogen: true
+log_level: info
+
+### 9.3 Behavior
+
+    Loaded on GUI startup
+    Editable via GUI (future)
+    Used to resolve relative paths and toggle features
+    
+
+---
+
+### ✅ New Section: 10. Documentation Requirements for YAML Updates
+
+```markdown
+## 10. Documentation Requirements for YAML Updates
+
+Defines the structural and content expectations for `.md` files updated via YAML.
+
+### 10.1 Required Elements
+- Header block with version, date, author, section
+- Numbered sections and subsections
+- Tables for structured data
+- Bullets for clarity
+- No nested instructions
+- No fluff or repetition
+
+### 10.2 Layout Expectations
+
+```markdown
+# File Title
+
+## 1. Overview
+## 2. Section Title
+### 2.1 Subsection
+
+10.3 Tone & Style
+
+    Direct, functional, user-focused
+    Neurodivergent-friendly formatting
+    Consistent across all .md files
+
+10.4 Validation Checklist
+
+    ✅ Header block present
+    ✅ Section numbering correct
+    ✅ Tables used where applicable
+    ✅ Bullets used for lists
+    ✅ No fluff or nested logic    
+
+---
+
+  

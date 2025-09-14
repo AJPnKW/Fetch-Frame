@@ -3,11 +3,12 @@
 # Author: Andrew + Copilot
 # Section: YAML GUI Launcher
 
+# Corrected launcher path
 import subprocess
 import os
 
 def launch_yaml_gui():
-    gui_path = os.path.join("yaml_update_tool", "update_tool_gui.py")
+    gui_path = os.path.join(os.path.dirname(__file__), "update_tool_gui.py")
     if os.path.exists(gui_path):
         subprocess.run(["python", gui_path])
     else:
