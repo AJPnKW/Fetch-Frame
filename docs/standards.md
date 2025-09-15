@@ -1,10 +1,40 @@
-Thanks, Andrew. I’ve reviewed both parts of your input and merged everything into a single, clean, structured, and complete `standards.md` document. This version eliminates duplication, aligns formatting, and ensures all your ideas are incorporated with clarity and consistency.
+# Version: 1.0.0  
+# Last Updated: 2025-09-14  
+# Author: Andrew  
+# Section: Documentation Standards
 
-Here’s the final copy-paste-ready version:
+## 1. Header Block Format
 
----
+Each `.md` file must begin with:
+
 ```markdown
-# standards.md
+# Version: X.Y.Z  
+# Last Updated: YYYY-MM-DD  
+# Author: Name  
+# Section: [Topic]
+
+2. Markdown Structure
+
+    Use numbered sections and subsections
+    Use tables for structured data
+    Use bullet points for clarity
+    Link related .md files internally
+
+## 3. YAML Update Logic
+	Element	Rule
+	File name	update_YYYY-MM-DD_HHMM_version-X.Y.Z.yaml
+	Fields required	version, timestamp, updated_files, changes
+	Change format	Bullet points per file
+
+## 4. Tone and Style
+
+    Direct, functional, user-focused
+    Avoid fluff and repetition
+    Use consistent terminology
+
+## 5. Related Files
+
+
 
 ## 1. Overview
 
